@@ -8,10 +8,9 @@ class Game
 
   attr_accessor :board, :ship, :score, :player
 
-
-
-  def initialize(board,ship,score,player)
-    @player = Player.new
+  def initialize
+    @player1 = Player.new
+    @player2 = Player.new
     @board = Board.new
     @ship = Ship.new
     @score = Score.new
